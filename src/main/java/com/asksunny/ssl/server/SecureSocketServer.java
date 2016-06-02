@@ -33,8 +33,9 @@ public class SecureSocketServer {
         if (args.length > 0) {
             port = Integer.parseInt(args[0]);
         } else {
-            port = 8443;
+            port = 8449;
         }
+        System.out.println("Starting on port " + port);
         new SecureSocketServer(port).run();
     }
 }

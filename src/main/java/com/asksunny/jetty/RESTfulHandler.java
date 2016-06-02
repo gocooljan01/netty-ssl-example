@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.handler.AbstractHandler;
 
-import com.asksunny.rest.MyRestService;
+//import com.asksunny.rest.MyRestService;
 
 public class RESTfulHandler extends AbstractHandler {
 

@@ -93,7 +93,7 @@ public class SecureSocketPlainClient {
 	{
 		
 		String host = args.length>0?args[0]:"localhost";
-		int port = args.length>1?Integer.parseInt(args[1]):8443;
+		int port = args.length>1?Integer.parseInt(args[1]):8449;
 		SecureSocketPlainClient client = new SecureSocketPlainClient(host, port);
 		client.open();
 		SecureMessage req = new SecureMessage();
