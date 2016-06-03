@@ -14,16 +14,20 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.4</version>
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>com.asksunny.ssl.server.SecureSocketServer</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
+  				<groupId>io.fabric8</groupId>
+  				<artifactId>hawt-app-maven-plugin</artifactId>
+  				<version>2.2.101</version>
+  				<executions>
+    				<execution>
+      				<goals>
+        				<goal>build</goal>
+      				</goals>
+      				<phase>package</phase>
+    				</execution>
+  				</executions>
+  				<configuration>
+    				<javaMainClass>com.asksunny.ssl.server.SecureSocketServer</javaMainClass>
+  				</configuration>
 			</plugin>
 		</plugins>
 	</build>
