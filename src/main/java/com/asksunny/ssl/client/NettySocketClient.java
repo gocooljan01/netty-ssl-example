@@ -152,10 +152,14 @@ public class NettySocketClient {
 
 	public static void main(String[] args) throws Exception {
 
-		String host = args.length > 0 ? args[0] : "localhost";
-		int port = args.length > 1 ? Integer.parseInt(args[1]) : 8443;
+		System.out.println("Start client..");
+		String host = args.length > 0 ? args[0] : "172.30.204.117";
+		System.out.println("client call host: "+ host);
+		int port = args.length > 1 ? Integer.parseInt(args[1]) : 8449;
+		System.out.println("client call port: "+ port);
 		NettySocketClient socketClient = new NettySocketClient(host, port);
 		socketClient.open();
+		System.out.println("sending hello");
 		byte[] response  = socketClient.sendMessage("Hellloooooooooooooooooo".getBytes());
 		System.out.println(new String(response));
 		socketClient.close();

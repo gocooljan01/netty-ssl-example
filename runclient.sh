@@ -1,0 +1,1 @@
+java -cp target/netty-secure-socket-0.0.1-SNAPSHOT.jar:lib/netty-common-4.1.0.Final.jar:lib/netty-transport-4.1.0.Final.jar:lib/netty-buffer-4.1.0.Final.jar:lib/netty-all-4.1.0.Final.jar com.asksunny.ssl.client.NettySocketClient
